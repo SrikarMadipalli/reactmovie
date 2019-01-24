@@ -1,12 +1,15 @@
+/* eslint-disable import/first */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
+// import 'mdbootstrap/css/mdb.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+// import 'mdbootstrap/js/mdb.min.js';
+import jQuery from 'jquery';
+window.jQuery = jQuery;
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// import './scss/index.scss';
+import './index.css'
+import App from './components/App';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App/>,document.getElementById('app'));

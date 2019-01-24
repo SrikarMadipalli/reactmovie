@@ -1,14 +1,206 @@
+html{
+  margin: 0px;
+  overflow-x: hidden;
+}
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #e1e6e1;
+}
+#brand {
+  color: whitesmoke;
+  font-weight: bold;
+}
+.socialnav {
+  margin-left: 90%;
+}
+#SubHeading {
+  display: flex;
+  flex-direction: column;
+}
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.movie_card {
+  margin-top: 3%;
+}
+.search_card {
+  margin-top: 5%;
+}
+.card-img-top {
+  width: 100%;
+  height: 50vh;
+  padding:2%;
+
+}
+.card-title {
+  font-weight: normal;
+  font-size: 1;
+}
+h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 2%;
+  color: #1a1a1a;
+  line-height: 65px;
+}
+#home {
+  background: url("../src/assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.jarallax {
+  height: 100vh;
+  width: 100vw;
+}
+.blockquote.b-reverse {
+  padding-right: 1rem;
+  padding-left: 0;
+  text-align: right;
+  border-right: 0.25rem solid #eceeef;
+  border-left: 0;
+}
+.floral {
+  text-align: center;
+  margin-top:3%
+}
+.floralSecond{
+  text-align: center;
+  margin-top:3%;
+  display: block;
+
+}
+footer {
+  text-align: center;
+  background: lightgray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+footer a {
+  display: inline;
+  padding: 10px 0;
+}
+
+#social_icon_footer {
+  padding: 14px 0;
+}
+
+#social_icon_footer .social:hover {
+  transform: scale(1.1);
+}
+
+#social_icon_footer .social {
+  transform: scale(0.8);
+  transition-duration: 0.5s;
+}
+
+#social_icon_footer a {
+  color: #333;
+}
+
+#social_icon_footer #social-fb:hover {
+  color: #3b5998;
+  box-shadow: none;
+}
+
+#social_icon_footer #social-tw:hover {
+  color: #4099ff;
+  box-shadow: none;
+}
+
+#social_icon_footer #social-gp:hover {
+  color: #d34836;
+  box-shadow: none;
+}
+
+#social_icon_footer #social-em:hover {
+  color: #f39c12;
+  box-shadow: none;
+}
+
+th{
+  width:10%
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.form-check-label{
+  margin-right: 5%;
+  color: whitesmoke;
+}
+.form-check-input{
+  margin-top: 1%;
+  
+}
+.form-check{
+  margin-top: 1%;
+}
+p{
+  margin-bottom: 5px;
+}
+@media (max-width:768px) {
+  .jarallax{
+    height: 45vh;
+  }
+  .form-check{
+    display: none;
+  }
+}
+
+.Tableimage{
+  height:30vh;
+  width:13vw;
+}
+
+#TableTitle{
+  font-weight: bold;
+}
+#TableDesc{
+  font-size: x-large;
 }
