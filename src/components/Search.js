@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Cards from './cards';
 import CardsTabularLayout from './CardsTabularLayout';
-import axios from "axios";
 
 class Search extends Component {
   constructor(props) {

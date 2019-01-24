@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Search from './Search';
-import Cards from './cards';
-import axios from 'axios';
+import axios from "axios";
 
 class App extends Component {
   constructor(props) {
